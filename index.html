@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Zaidan | Bug Hunter</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="space-canvas"></canvas>
+    
+    <div class="loader" id="loader">
+        <div class="loader-text">[loading]</div>
+        <div class="loader-bar"></div>
+    </div>
+    
+    <main class="container" id="main">
+        <div class="profile">
+            <div class="avatar-frame">
+                <div class="avatar-glow"></div>
+                <img src="https://placehold.co/150x150/ff4d4d/white?text=Z" alt="Ahmad Zaidan Qotrunnada" class="avatar" id="avatar">
+            </div>
+            <h1>Ahmad Zaidan <span class="red">Qotrunnada</span></h1>
+            <div class="badge">bug hunter · osint · greyhat</div>
+        </div>
+        
+        <div class="bio-card">
+            <p class="quote">"setiap celah adalah pelajaran. bukan untuk merusak, tapi untuk membangun benteng yang lebih kuat."</p>
+            <div class="quote-author">— zaidan</div>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-num">150+</div>
+                <div class="stat-label">vulnerabilities</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">50+</div>
+                <div class="stat-label">cve reports</div>
+            </div>
+            <div class="stat">
+                <div class="stat-num">5+</div>
+                <div class="stat-label">years</div>
+            </div>
+        </div>
+        
+        <div class="links">
+            <a href="#" class="link">github</a>
+            <a href="#" class="link">telegram</a>
+            <a href="#" class="link">email</a>
+            <a href="#" class="link">hackerone</a>
+        </div>
+        
+        <div class="tech">
+            <span>python</span>
+            <span>javascript</span>
+            <span>go</span>
+            <span>rust</span>
+            <span>bash</span>
+            <span>sql</span>
+        </div>
+        
+        <div class="cert">
+            <span>oscp</span>
+            <span>ceh</span>
+            <span>ewptx</span>
+        </div>
+    </main>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
+            }
+        }
+    </script>
+    <script type="module" src="js/space.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
