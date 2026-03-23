@@ -1,10 +1,9 @@
+// loader (opsional, bisa dihapus)
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        const loader = document.getElementById('loader');
-        if (loader) loader.classList.add('hide');
-    }, 2000);
+    console.log('🚀 portfolio loaded');
 });
 
+// hamburger menu
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 
@@ -14,6 +13,7 @@ if (navToggle) {
     });
 }
 
+// section navigation
 const navItems = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('.section');
 
@@ -44,17 +44,13 @@ navItems.forEach(item => {
     });
 });
 
-
-const scrollHint = document.getElementById('scrollHint');
-let scrollTimeout;
-window.addEventListener('scroll', () => {
-    if (scrollHint) {
-        scrollHint.classList.add('hide');
-        clearTimeout(scrollTimeout);
-        scrollTimeout = setTimeout(() => {
-            scrollHint.classList.remove('hide');
-        }, 2000);
+// close mobile menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (navLinks && navLinks.classList.contains('active')) {
+        if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+            navLinks.classList.remove('active');
+        }
     }
 });
 
-console.log('%c👾 zaidan · bug hunter | solar system mode active', 'color: #ff4d4d; font-size: 12px;');
+console.log('✅ developer portfolio ready');
