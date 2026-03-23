@@ -2,22 +2,15 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Zaidan | Bug Hunter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaidan · Bug Hunter</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <canvas id="solar-canvas"></canvas>
-    
-    <div class="loader" id="loader">
-        <div class="loader-text">[initializing nasa visual system]</div>
-        <div class="loader-bar"></div>
-    </div>
-    
     <nav class="nav">
-        <div class="nav-brand">z<span class="red">.</span></div>
+        <div class="nav-brand">zaidan<span class="dot">.</span></div>
         <button class="nav-toggle" id="navToggle">
             <span></span><span></span><span></span>
         </button>
@@ -28,79 +21,164 @@
             <a href="#contact" class="nav-link">contact</a>
         </div>
     </nav>
-    
+
     <main>
+        <!-- HOME -->
         <section id="home" class="section active">
             <div class="container">
-                <div class="profile">
-                    <div class="avatar-frame">
-                        <div class="avatar-glow"></div>
-                        <img src="https://ui-avatars.com/api/?background=ff4d4d&color=fff&bold=true&size=150&name=Ahmad+Zaidan+Qotrunnada" alt="Ahmad Zaidan Qotrunnada" class="avatar">
+                <div class="hero">
+                    <div class="hero-badge">bug hunter · osint · greyhat</div>
+                    <h1>Ahmad Zaidan <span class="accent">Qotrunnada</span></h1>
+                    <p class="hero-desc">mencari celah bukan untuk merusak, tapi untuk membangun benteng yang lebih kuat.</p>
+                    <div class="stats">
+                        <div class="stat"><span class="num">150+</span><span class="label">vulnerabilities</span></div>
+                        <div class="stat"><span class="num">50+</span><span class="label">cve reports</span></div>
+                        <div class="stat"><span class="num">5+</span><span class="label">years</span></div>
                     </div>
-                    <h1>Ahmad Zaidan <span class="red">Qotrunnada</span></h1>
-                    <div class="badge">bug hunter · osint · greyhat</div>
-                </div>
-                <div class="bio-card">
-                    <p class="quote">"setiap celah adalah pelajaran. bukan untuk merusak, tapi untuk membangun benteng yang lebih kuat."</p>
-                    <div class="quote-author">— zaidan</div>
-                </div>
-                <div class="stats">
-                    <div class="stat"><div class="stat-num">150+</div><div class="stat-label">vulnerabilities</div></div>
-                    <div class="stat"><div class="stat-num">50+</div><div class="stat-label">cve reports</div></div>
-                    <div class="stat"><div class="stat-num">5+</div><div class="stat-label">years</div></div>
+                    <div class="social-links">
+                        <a href="#" class="social"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social"><i class="fab fa-telegram"></i></a>
+                        <a href="#" class="social"><i class="fas fa-envelope"></i></a>
+                        <a href="#" class="social"><i class="fab fa-hackerone"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- SKILLS -->
         <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title">/ skills</h2>
+                <h2 class="section-title">skills</h2>
                 <div class="skills-grid">
-                    <div class="skill-card"><div class="skill-icon go"></div><h3>Golang</h3><p>high-performance tools · concurrency · api</p></div>
-                    <div class="skill-card"><div class="skill-icon python"></div><h3>Python</h3><p>exploit dev · automation · osint</p></div>
-                    <div class="skill-card"><div class="skill-icon node"></div><h3>NodeJS</h3><p>web apps · rest api · backend</p></div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-golang"></i></div>
+                        <h3>Golang</h3>
+                        <p>high-performance tools · concurrency · api development</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-python"></i></div>
+                        <h3>Python</h3>
+                        <p>exploit dev · automation · osint · data analysis</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                        <h3>NodeJS</h3>
+                        <p>web apps · rest api · backend systems</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <h3>Bash</h3>
+                        <p>automation · scripting · system administration</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <h3>SQL</h3>
+                        <p>database design · query optimization · injection analysis</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Security</h3>
+                        <p>web security · network security · binary analysis</p>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- PROJECTS -->
         <section id="projects" class="section">
             <div class="container">
-                <h2 class="section-title">/ projects</h2>
+                <h2 class="section-title">projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card"><div class="project-img"><img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=WMES+OSINT"></div><h3>WMES OSINT</h3><p>Osint automation tool untuk data publik Indonesia</p><div class="project-tags"><span>python</span><span>api</span></div><a href="#" class="project-link">view →</a></div>
-                    <div class="project-card"><div class="project-img"><img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=BugHunter+Framework"></div><h3>BugHunter Framework</h3><p>Automated vulnerability scanner</p><div class="project-tags"><span>python</span><span>recon</span></div><a href="#" class="project-link">view →</a></div>
-                    <div class="project-card"><div class="project-img"><img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=Subdomain+Scanner"></div><h3>Subdomain Scanner</h3><p>Subdomain enumeration tool</p><div class="project-tags"><span>js</span><span>api</span></div><a href="#" class="project-link">view →</a></div>
-                    <div class="project-card"><div class="project-img"><img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=Dark+Web+Monitor"></div><h3>Dark Web Monitor</h3><p>Dark web threat intelligence</p><div class="project-tags"><span>python</span><span>tor</span></div><a href="#" class="project-link">view →</a></div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=WMES+OSINT" alt="WMES OSINT">
+                        </div>
+                        <div class="project-info">
+                            <h3>WMES OSINT</h3>
+                            <p>Osint automation tool untuk data publik Indonesia. Dilengkapi API endpoint, subdomain scanner, dan e-wallet checker.</p>
+                            <div class="project-tags">
+                                <span>python</span><span>api</span><span>osint</span>
+                            </div>
+                            <a href="#" class="project-link">view project →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=BugHunter+Framework" alt="BugHunter Framework">
+                        </div>
+                        <div class="project-info">
+                            <h3>BugHunter Framework</h3>
+                            <p>Automated vulnerability scanner dengan support XSS, SQLi, RCE detection. Export hasil ke JSON/CSV.</p>
+                            <div class="project-tags">
+                                <span>python</span><span>recon</span><span>exploit</span>
+                            </div>
+                            <a href="#" class="project-link">view project →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=Subdomain+Scanner" alt="Subdomain Scanner">
+                        </div>
+                        <div class="project-info">
+                            <h3>Subdomain Scanner</h3>
+                            <p>Subdomain enumeration tool menggunakan crt.sh, wayback, dan dnsdumpster. Filter live status.</p>
+                            <div class="project-tags">
+                                <span>js</span><span>api</span><span>recon</span>
+                            </div>
+                            <a href="#" class="project-link">view project →</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="https://placehold.co/400x200/1a1a1a/ff4d4d?text=Dark+Web+Monitor" alt="Dark Web Monitor">
+                        </div>
+                        <div class="project-info">
+                            <h3>Dark Web Monitor</h3>
+                            <p>Dark web scraping tool untuk threat intelligence. Monitor credential leaks dan forum underground.</p>
+                            <div class="project-tags">
+                                <span>python</span><span>tor</span><span>osint</span>
+                            </div>
+                            <a href="#" class="project-link">view project →</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
+        <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">/ contact</h2>
+                <h2 class="section-title">contact</h2>
                 <div class="contact-grid">
-                    <a href="#" class="contact-card"><i class="fab fa-github"></i><span>github</span><small>/zaidan</small></a>
-                    <a href="#" class="contact-card"><i class="fab fa-telegram"></i><span>telegram</span><small>@zaidan</small></a>
-                    <a href="#" class="contact-card"><i class="fas fa-envelope"></i><span>email</span><small>zaidan@sec.id</small></a>
-                    <a href="#" class="contact-card"><i class="fab fa-hackerone"></i><span>hackerone</span><small>/zaidan</small></a>
+                    <a href="#" class="contact-card">
+                        <i class="fab fa-github"></i>
+                        <span>github</span>
+                        <small>/zaidan</small>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <i class="fab fa-telegram"></i>
+                        <span>telegram</span>
+                        <small>@zaidan</small>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>email</span>
+                        <small>zaidan@sec.id</small>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <i class="fab fa-hackerone"></i>
+                        <span>hackerone</span>
+                        <small>/zaidan</small>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
-    
-    <div class="scroll-hint" id="scrollHint">
-        <div class="scroll-line"></div>
-        <span>scroll</span>
-    </div>
 
-    <script type="importmap">
-        {
-            "imports": {
-                "three": "https://unpkg.com/three@0.128.0/build/three.module.js"
-            }
-        }
-    </script>
-    <script type="module" src="js/solar.js"></script>
+    <footer class="footer">
+        <p>© 2024 zaidan · bug hunter</p>
+    </footer>
+
     <script src="js/main.js"></script>
 </body>
 </html>
